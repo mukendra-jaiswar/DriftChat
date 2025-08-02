@@ -4,7 +4,7 @@ A full-stack real-time chat application built with the MERN stack that enables u
 
 ## 🌟 Live Demo
 
-**Visit the application:** [https://driftchat-1.onrender.com](https://driftchat-1.onrender.com](https://driftchat-2.onrender.com)
+**Visit the application:** [https://driftchat-2.onrender.com)
 
 ## ✨ Features
 
