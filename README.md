@@ -75,29 +75,6 @@ A full-stack real-time chat application built with the MERN stack that enables u
 - **MongoDB Atlas** - Cloud database service
 - **Mongoose ODM** - Object document modeling
 
-## 📱 Screenshots
-
-### Login & Registration
-
-![Login](screenshots/login.PNG)
-![Signup](screenshots/signup.PNG)
-
-### Chat Interface
-
-![Main Screen](screenshots/mainscreen.PNG)
-![Real-time Chat](screenshots/real-time.PNG)
-
-### Group Features
-
-![Group Creation](screenshots/new%20grp.PNG)
-![Group Management](screenshots/add%20rem.PNG)
-
-### User Features
-
-![User Search](screenshots/search.PNG)
-![User Profile](screenshots/profile.PNG)
-![Notifications](screenshots/group%20%2B%20notif.PNG)
-
 ## 🚀 Installation & Setup
 
 ### Prerequisites
@@ -308,14 +285,6 @@ This project is licensed under the ISC License.
 - [MongoDB Atlas](https://www.mongodb.com/atlas) for cloud database
 - [Render](https://render.com/) for hosting
 
-## 📞 Support
 
-If you have any questions or need support, please:
-
-1. Check the [Issues](https://github.com/mukendra-jaiswar/DriftChat/issues) page
-2. Create a new issue if your problem isn't already listed
-3. Contact the author for direct support
-
----
 
 ⭐ **Star this repository if you found it helpful!**
