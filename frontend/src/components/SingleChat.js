@@ -15,7 +15,7 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = process.env.REACT_APP_API_URL || "http://localhost:5000"; // "https://your-app-name.onrender.com"; -> After deployment
+const ENDPOINT = "https://driftchat-1.onrender.com"; // "https://your-app-name.onrender.com"; -> After deployment
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
