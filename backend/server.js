@@ -30,11 +30,27 @@ app.use("/api/message", messageRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "/frontend/build")));
-
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
-  );
+  // Check if frontend build exists
+  const frontendBuildPath = path.join(__dirname1, "/frontend/build");
+  const indexPath = path.resolve(__dirname1, "frontend", "build", "index.html");
+  
+  try {
+    // Check if the build directory exists
+    if (require('fs').existsSync(frontendBuildPath)) {
+      app.use(express.static(frontendBuildPath));
+      app.get("*", (req, res) => res.sendFile(indexPath));
+    } else {
+      // If build doesn't exist, serve API only
+      app.get("/", (req, res) => {
+        res.json({ message: "DriftChat API is running", status: "success" });
+      });
+    }
+  } catch (error) {
+    console.log("Frontend build not found, serving API only");
+    app.get("/", (req, res) => {
+      res.json({ message: "DriftChat API is running", status: "success" });
+    });
+  }
 } else {
   app.get("/", (req, res) => {
     res.send("API is running..");
