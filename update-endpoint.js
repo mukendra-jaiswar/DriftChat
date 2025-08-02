@@ -4,8 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Replace this with your actual Render URL
-const RENDER_URL = 'https://your-app-name.onrender.com'; // Update this
+// Replace this with your actual Render URL after deployment
+const RENDER_URL = 'https://driftchat.onrender.com'; // Update this with your actual URL
 
 const filePath = path.join(__dirname, 'frontend', 'src', 'components', 'SingleChat.js');
 
